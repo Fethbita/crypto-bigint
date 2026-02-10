@@ -94,6 +94,11 @@ impl_uint_array_encoding! {
     (U8192, typenum::U1024)
 }
 
+#[cfg(feature = "extra-sizes")]
+impl_uint_array_encoding! {
+    (U12288, typenum::U1536)
+}
+
 cpubits::cpubits! {
     32 => {
         impl_uint_array_encoding! {
